@@ -17,7 +17,7 @@ void _push(stack_t **stack, unsigned int line_number)
 
 	if (argument == NULL)
 	{
-		dprintf(STDERR_FILENO, "L%u: usage: push integer\n", line_number);
+		vprintf(STDERR_FILENO, "L%u: usage: push integer\n", line_number);
 		free_stack_t(*stack);
 
 		exit(EXIT_FAILURE);

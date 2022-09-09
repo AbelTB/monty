@@ -46,4 +46,4 @@ void _div(stack_t **head, unsigned int line_number)
 	*head = current->next;
 	free(current);
 	current->prev = NULL;
-}i
+}
